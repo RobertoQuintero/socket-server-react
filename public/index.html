@@ -42,6 +42,10 @@
   const mensajes = document.getElementById('misMensajes')
   const textMensaje = document.getElementById('textMensaje')
 
+  socket.on('connect',()=>{
+    console.log('conectado')
+  })
+
 
   formulario.addEventListener('submit',(e)=>{
     e.preventDefault()
